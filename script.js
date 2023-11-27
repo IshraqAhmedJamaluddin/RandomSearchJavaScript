@@ -10,16 +10,10 @@ function randomSearch() {
   var found = false;
   var result = '';
   var message = '';
-  while (!found) {
-    var randomIndex = Math.floor(Math.random() * list.length);
-    if (list[randomIndex] === target) {
-      message = 'Target found!';
-      found = true;
-    } else {
-      message = 'Target not found.';
-    }
-    result += "current values: " + list[randomIndex] + ", " + message + "<br>";
-  }
+
+  // Your loop here:
+
+
   result += "Done!";
   document.getElementById('result').innerHTML = result;
 }
