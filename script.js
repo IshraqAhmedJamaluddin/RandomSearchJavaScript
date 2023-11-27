@@ -1,5 +1,5 @@
 function randomSearch() {
-  var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Example list, you can modify this as needed
+  var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var target = parseInt(document.getElementById('target').value);
 
   if (isNaN(target)) {
@@ -7,13 +7,13 @@ function randomSearch() {
     return;
   }
 
-  var found = false;
-  var result = '';
-  var message = '';
-
-  // Your loop here:
-
+  [found, result] = randomSearch_1(list, target)
 
   result += "Done!";
   document.getElementById('result').innerHTML = result;
+}
+
+// complete this function
+function randomSearch_1(myList, target) {
+
 }
